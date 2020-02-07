@@ -171,7 +171,7 @@ VAULT_ADDR="https://127.0.0.1:8200" vault write -format=json pki_int/intermediat
 VAULT_ADDR="https://127.0.0.1:8200" vault write -format=json pki/root/sign-intermediate csr=@pki_intermediate.csr \
         format=pem_bundle \
         | jq -r '.data.certificate' > intermediate.cert.pem
-AULT_ADDR="https://127.0.0.1:8200" vault write pki_int/intermediate/set-signed certificate=@intermediate.cert.pem
+VAULT_ADDR="https://127.0.0.1:8200" vault write pki_int/intermediate/set-signed certificate=@intermediate.cert.pem
 VAULT_ADDR="https://127.0.0.1:8200" vault write pki_int/roles/example-dot-com \
         allowed_domains="${DOMAIN}" \
         allow_subdomains=true \
