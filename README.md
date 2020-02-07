@@ -13,3 +13,6 @@ cd cloudflare-nginx-terraform
 terraform init
 terraform apply
 ```
+- Access Vault server on dedicated domain name in my case: 
+</br>
+https://vault.chavo.eu:8200
