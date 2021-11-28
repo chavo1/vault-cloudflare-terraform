@@ -8,8 +8,8 @@
 ### How to use it
 - Clone the repo
 ```
-git clone https://github.com/chavo1/cloudflare-nginx-terraform.git
-cd cloudflare-nginx-terraform
+git clone https://github.com/chavo1/vault-cloudflare-terraform.git
+cd vault-cloudflare-terraform
 terraform init
 terraform apply
 ```
